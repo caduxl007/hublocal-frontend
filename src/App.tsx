@@ -1,12 +1,17 @@
+import { AppProvider } from './contexts';
 import GlobalStyles from './styles/global';
+import { AppRoutes } from './routes';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-      <div>Oi</div>
+    <BrowserRouter>
+      <AppProvider>
+        <AppRoutes />
 
-      <GlobalStyles />
-    </>
+        <GlobalStyles />
+      </AppProvider>
+    </BrowserRouter>
   );
 }
 
