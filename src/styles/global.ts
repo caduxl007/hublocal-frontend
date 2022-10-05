@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   :root{
@@ -7,9 +7,7 @@ export default createGlobalStyle`
     --large: 5rem;
     --xl: 10rem;
 
-    --font: 'Roboto Slab', sans-serif;
-
-    --background: #ccc;
+    --font: 'Poppins', sans-serif;;
   }
 
   * {
@@ -40,7 +38,7 @@ export default createGlobalStyle`
 
   body {
     scroll-behavior: smooth;
-    background-color: var(--background);
+    background-color: ${({ theme }) => theme.colors.background};
     min-height: 100vh;
 
     text-rendering: optimizeLegibility !important;
