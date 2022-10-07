@@ -7,7 +7,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [ReactJS](https://pt-br.reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/) 
 - [Vercel](https://vercel.com/)
-- [TypeScript](https://www.typescriptlang.org/)
 - [MaterialUI](https://mui.com/pt/)
 - [Jest](https://jestjs.io/pt-BR/)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
