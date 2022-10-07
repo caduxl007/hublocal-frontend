@@ -12,7 +12,6 @@ import { toast } from 'react-toastify';
 import * as Yup from 'yup';
 import { ModalContent } from '..';
 import { ITicket } from '../../../models/ticket';
-import api from '../../../services/api';
 import { editTicket } from '../../../services/routes/Ticket.service';
 import { getValidationErrors } from '../../../utils/getValidationErrors';
 import { Button } from '../../Button';

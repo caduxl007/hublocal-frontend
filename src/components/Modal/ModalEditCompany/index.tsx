@@ -5,7 +5,6 @@ import { toast } from 'react-toastify';
 import * as Yup from 'yup';
 import { ModalContent } from '..';
 import { ICompany, ICreateCompanyFormData } from '../../../models/company';
-import api from '../../../services/api';
 import { editCompany } from '../../../services/routes/Company.service';
 import { getValidationErrors } from '../../../utils/getValidationErrors';
 import { schemaCreateCompany } from '../../../utils/yup/schemas-validations';

@@ -6,7 +6,6 @@ import * as Yup from 'yup';
 import { ModalContent } from '..';
 import { useFetchCep } from '../../../hooks/useFetchCep';
 import { ICreatePlaceFormData, IPlace } from '../../../models/place';
-import api from '../../../services/api';
 import { editPlace } from '../../../services/routes/Place.service';
 import { getValidationErrors } from '../../../utils/getValidationErrors';
 import { schemaEditPlace } from '../../../utils/yup/schemas-validations';
