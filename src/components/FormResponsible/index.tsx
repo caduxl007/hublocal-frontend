@@ -5,7 +5,6 @@ import * as Yup from 'yup';
 
 import { toast } from 'react-toastify';
 import { ICreateResponsibleFormData } from '../../models/responsible';
-import api from '../../services/api';
 import { getValidationErrors } from '../../utils/getValidationErrors';
 import { Input } from '../Input';
 import { Button } from '../Button';
