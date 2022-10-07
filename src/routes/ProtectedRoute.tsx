@@ -1,15 +1,22 @@
-import { ReactNode } from 'react';
+import { ReactElement } from 'react';
 import { Navigate } from 'react-router-dom';
+import { useAuth } from '../contexts/AuthContext';
 
 interface RouteProps {
-  children: ReactNode;
+  children: ReactElement;
+  isAuthenticate?: boolean;
 }
 
-export const ProtectedRoute = ({ children }: RouteProps) => {
-  const authenticated = false;
-  if (!authenticated) {
+export function ProtectedRoute({ children, isAuthenticate }: RouteProps) {
+  const { token } = useAuth();
+
+  if (!token && isAuthenticate) {
     return <Navigate to="/" />;
   }
 
+  if (token && !isAuthenticate) {
+    return <Navigate to="/dashboard" />;
+  }
+
   return children;
-};
+}

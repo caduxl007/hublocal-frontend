@@ -9,6 +9,7 @@ export default {
     green_secundary: '#159374',
     red_primary: '#EB001B',
     blue: '#0485ff',
-    background: '#121214',
+    background: '#112442',
+    grey_secondary: '#212121'
   },
 };

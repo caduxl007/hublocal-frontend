@@ -1,7 +1,7 @@
 import { InputHTMLAttributes, useEffect, useRef } from 'react';
 import { useField } from '@unform/core';
 
-import { Container } from './styles';
+import * as S from './styles';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
@@ -20,7 +20,7 @@ export function Input({ name, placeholder, ...rest }: InputProps) {
   }, [fieldName, registerField]);
 
   return (
-    <Container isError={!!error}>
+    <S.Container isError={!!error}>
       <span>{placeholder}</span>
       <input
         name={name}
@@ -30,6 +30,6 @@ export function Input({ name, placeholder, ...rest }: InputProps) {
         ref={inputRef}
       />
       {error && <p>{error}</p>}
-    </Container>
+    </S.Container>
   );
 }

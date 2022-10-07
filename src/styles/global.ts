@@ -54,6 +54,12 @@ export default createGlobalStyle`
     text-decoration: none;
     transition: opacity 300ms ease-in-out;
     cursor: pointer;
+
+    color: ${({theme}) => theme.colors.blue};
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   button {

@@ -26,7 +26,8 @@ export const Container = styled.main`
 export const Content = styled.div`
   max-width: 44.8rem;
   width: 100%;
-  border: 1px solid #212121;
+  border: 1px solid ${({ theme }) => theme.colors.white};
+
   padding: 2.5rem;
 
   > div:nth-of-type(1) {

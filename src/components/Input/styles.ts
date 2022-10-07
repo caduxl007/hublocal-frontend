@@ -6,8 +6,7 @@ interface IInputProps {
 
 export const Container = styled.div<IInputProps>`
   ${({ theme, isError }) => css`
-    max-width: 38rem;
-    width: 100%;
+    max-width: 100%;
 
     span {
       font-size: 1.6rem;
@@ -18,12 +17,15 @@ export const Container = styled.div<IInputProps>`
 
     input {
       display: block;
-      margin-top: repx;
       width: 100%;
       height: 4rem;
       padding-left: 5px;
       border: 1px solid
         ${(props) => (isError ? theme.colors.red_primary : '#424242')};
+
+      &:disabled {
+        background-color: transparent;
+      }
     }
 
     p {
