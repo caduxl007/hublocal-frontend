@@ -35,7 +35,7 @@ export function CreateCompany() {
       const response = await createCompany(data);
       setCompany(response.data);
 
-      toast.success('Empresa criada com sucesso!');
+      toast.success('Empresa criada com sucesso! Agora você pode adicionar um responsável.');
     } catch (err: any) {
       if (err instanceof Yup.ValidationError) {
         const errors = getValidationErrors(err);

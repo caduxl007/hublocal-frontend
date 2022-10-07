@@ -13,7 +13,6 @@ import {
   TitleContent,
 } from '../../../components';
 import { Input } from '../../../components/Input';
-import api from '../../../services/api';
 import { toast } from 'react-toastify';
 import { ICompany } from '../../../models/company';
 import { useFetch } from '../../../hooks/useFetch';

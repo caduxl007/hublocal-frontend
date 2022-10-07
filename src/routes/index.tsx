@@ -83,15 +83,6 @@ export function AppRoutes() {
             </ProtectedRoute>
           }
         />
-
-        {/* <Route
-          path="*"
-          element={
-            <main sx="">
-              <p >There's nothing here!</p>
-            </main>
-          }
-        /> */}
       </Routes>
     </Suspense>
   );

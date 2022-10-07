@@ -5,7 +5,6 @@ import { TitleContent } from '../../../../../components/TitleContent';
 
 import * as S from './styles';
 import { toast } from 'react-toastify';
-import api from '../../../../../services/api';
 import { deleteCompany } from '../../../../../services/routes/Company.service';
 import { formattedCNPJ } from '../../../../../utils/formattedCNPJ';
 
